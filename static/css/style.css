@@ -135,3 +135,61 @@ footer span{float:none;display:block;margin-top:5px}
 header{font-size:9px}
 .pill{font-size:8px;padding:7px 9px}
 }
+
+/* Mobile navigation fix */
+@media(max-width:650px){
+
+  main{
+    margin-left:0 !important;
+    width:100% !important;
+  }
+
+  .sidebar{
+    position:relative;
+    width:100%;
+    height:auto;
+    min-height:0;
+    padding:12px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:6px;
+  }
+
+  .brand{
+    width:100%;
+    margin:0 0 8px;
+  }
+
+  .brand>div:last-child{
+    display:block;
+  }
+
+  .nav-label{
+    display:block;
+    width:100%;
+    margin:5px 0;
+  }
+
+  .nav{
+    display:inline-block;
+    width:auto;
+    font-size:12px;
+    padding:10px;
+    margin:2px;
+  }
+
+  .side-foot{
+    display:none;
+  }
+
+  header{
+    padding:0 12px;
+  }
+
+  .content{
+    width:100%;
+    padding:18px 12px;
+  }
+}
